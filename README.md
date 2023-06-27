@@ -1,3 +1,3 @@
 # padariasantopao
 
-Feito por: Aline Luiza, Letícia Nurnberg e Naiély Cabral 
+Feito por: Aline Luiza, Iasmim Rafaela, Letícia Nurnberg e Naiély Cabral
