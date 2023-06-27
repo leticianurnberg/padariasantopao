@@ -1,0 +1,95 @@
+/* ======= Config Global ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    cursor: pointer;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #E5CF94;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5F3305;
+    border-radius: 50px;
+    border: 1px solid #8648069c;
+}
+
+/* ============ Header ============ */
+
+header {
+    background-color: #965A1B;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* ======= Texto ======== */
+.container {
+    align-items: center;
+    height: 300px;
+    padding-top: 3rem;
+    padding-bottom: 20%;
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+  
+  .texto {
+    text-align: center;
+    font-size: 1.5rem;
+    color: #5F3305;
+  }
+
+/* ======= Botão ======== */
+  .botao {
+    border-radius: 20px;
+    background-color: #965A1B;
+    color: #ffffff;
+    padding: 10px 20px;
+    border: none;
+    text-decoration: none;
+  }

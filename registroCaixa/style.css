@@ -1,0 +1,288 @@
+/* ======= Config Global ======= */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    border: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+button {
+    cursor: pointer;
+}
+html {
+    font-size: 62.5%;
+}
+body {
+    background-color: #E5CF94;
+}
+
+::-webkit-scrollbar {
+    width: 7px;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #5F3305;
+    border-radius: 50px;
+    border: 1px solid #8648069c;
+}
+
+/* ============ Header ============ */
+
+header {
+    background-color: #965A1B;
+}
+
+.header-img {
+    max-width: 100%;
+    height: auto;
+}
+
+header div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav {
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 1%;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #333;
+    padding: 5px 10px;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/* Cards individuais */
+
+.cards-area {
+  display: flex;
+  flex-direction: column;
+  padding-top: 4rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.cards-area .cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  width: 69%;
+}
+
+.cards-area #btn-adicionar {
+  width: max-content;
+  background: none;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #5F3305;
+}
+
+.cards-container #cards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+  height: 40vh;
+  overflow-y: auto;
+}
+
+.cards {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 5px;
+  padding: 1.5rem 2.5rem;
+}
+
+.cards h4 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #5F3305;
+}
+
+.card-individual {
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+}
+
+.card-individual .valores-individual {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.valores-individual p {
+  font-size: 1.2rem;
+  font-weight: 700;
+  color: #5F3305;
+}
+
+.valores-individual span {
+  font-weight: 400;
+}
+
+@media (max-width: 1000px) {
+  .cards-area .cards-container {
+      width: 72%;
+  }
+}
+
+@media (max-width: 756px) {
+  .cards-area .cards-container {
+      width: 90%;
+  }
+  
+  .cards-container #cards {
+      height: 35vh;
+  }
+
+  .card-individual .valores-individual {
+      flex-direction: column;
+      gap: .5rem;
+  }
+}
+
+/* Modal POP-UP */
+
+.modal-container {
+  width: 100vw;
+  height: 110vh;
+  position: fixed;
+  background: rgba(229, 207, 148, 0.5);
+  top: 0rem;
+  left: 0rem;
+  z-index: 10000;
+  display: none;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.modal-container.mostrar {
+  display: flex;
+}
+
+.modal {
+  background-color: white;
+  max-width: min-content;
+  border-radius: 5px;
+  padding: 3rem;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+
+.modal h3 {
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: #5F3305;
+}
+
+.modal .modal-inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.modal-inputs input,
+.modal-inputs textarea {
+  padding: 1.6rem 2.5rem;
+  background-color: #F5F5F5;
+  color: #7D7D7D;
+  border-radius: 5px;
+}
+
+.modal-inputs textarea {
+  resize: vertical;
+}
+
+.modal .modal-btn {
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+  padding-top: 6rem;
+}
+
+.modal-btn #btn-enviar {
+  background-color: #5F3305;
+  color: white;
+  padding: 1.8rem 10rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.modal-btn #btn-enviar:hover {
+  background-color: #8648069c;
+}
+
+.modal-btn #btn-cancelar {
+  background-color: white;
+  color: #DB1E1E;
+  border: .1px solid #DB1E1E;
+  padding: 1.8rem 8.5rem;
+  border-radius: 5px;
+  font-size: 1.6rem;
+  font-weight: 600;
+}
+
+.modal-btn #btn-cancelar:hover {
+  background-color: #DB1E1E;
+  color: white;
+}
+
+@media (max-width: 700px) {
+
+  .modal-container .modal {
+      align-items: center;
+  }
+
+  .modal .modal-inputs {
+      align-items: center;
+      justify-content: center;
+  }
+
+  .modal-inputs input {
+      width: 120%;
+  }
+
+  .modal .modal-btn {
+      flex-direction: column;
+  }
+}
+
+/* ======= Botão ======== */
+
+.botao {
+  border-radius: 20px;
+  background-color: #965A1B;
+  color: #ffffff;
+  padding: 10px 20px;
+  border: none;
+  text-decoration: none;
+}
+
+/* ======= Footer ======== */
+
+footer {
+  text-align: center;
+  padding-top: 8rem;
+  padding-bottom: 2rem;
+  font-size: 1.4rem;
+  color: #5F3305;
+}
